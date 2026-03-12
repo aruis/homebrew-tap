@@ -1,17 +1,17 @@
 class Wifictl < Formula
   desc "Manage macOS network service IP and DNS settings"
   homepage "https://github.com/aruis/wifictl"
-  version "1.26.6"
+  version "1.26.7"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/aruis/wifictl/releases/download/v1.26.6/wifictl_v1.26.6_Darwin_arm64.tar.gz"
-      sha256 "3a11cc151dffb06e7da9bc60c08242a3e362aab17471d3a5d9d9c14d32915f04"
+      url "https://github.com/aruis/wifictl/releases/download/v1.26.7/wifictl_v1.26.7_Darwin_arm64.tar.gz"
+      sha256 "ef7dffb1075e498e0a8b7e1bd57d29e5a58a0ce9a7ca6de60b5846df5a00750e"
     end
 
     if Hardware::CPU.intel?
-      url "https://github.com/aruis/wifictl/releases/download/v1.26.6/wifictl_v1.26.6_Darwin_x86_64.tar.gz"
-      sha256 "1a7c87350bdea813a3c5e89087532ded60b0bbda5fd3054960d01ca0c5c21327"
+      url "https://github.com/aruis/wifictl/releases/download/v1.26.7/wifictl_v1.26.7_Darwin_x86_64.tar.gz"
+      sha256 "cf068447613abe619af35f3f17f6d99a712317d1110e8e4b69043cd5756180b7"
     end
   end
 
