@@ -16,7 +16,10 @@ class Wifictl < Formula
   end
 
   def install
-    bin.install Dir["*/wifictl"].fetch(0)
+    binary = ["wifictl", *Dir["*/wifictl"]].find { |path| File.file?(path) }
+    raise "wifictl binary not found in extracted archive" if binary.nil?
+
+    bin.install binary
   end
 
   test do
